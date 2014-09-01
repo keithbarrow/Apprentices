@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lists</title>
+    <style>
+    li {
+      background-color: orange;
+    }
+      .inside {
+        list-style-position:inside;
+      }
+      
+      .square {
+        list-style-type:square;
+      }
+      
+      .georgian {
+        list-style-type:georgian;
+      }
+      
+      .image {
+          list-style-image: url('http://i.imgur.com/OxHKeTw.gif');
+          list-style-position:inside;
+      }
+      
+    </style>
+	</head>
+	<body>
+    <div>
+      <h1>Outside (default)</h1>
+      <ul>
+        <li>XXXX</li>
+        <li>XXXX</li>
+        <li>XXXX</li>
+      </ul>
+      <ol>
+        <li>XXXX</li>
+        <li>XXXX</li>
+        <li>XXXX</li>
+      </ol>
+    </div>
+    <div>
+      <h1>Inside</h1>
+      <ul class="inside">
+        <li>XXXX</li>
+        <li>XXXX</li>
+        <li>XXXX</li>
+      </ul>
+      <ol class="inside">
+        <li>XXXX</li>
+        <li>XXXX</li>
+        <li>XXXX</li>
+      </ol>
+      </div>
+      <div>
+        <h1>ul, type specified</h1>
+        <ul class="square">
+          <li>First List Item</li>
+        <li>Second List Item</li>
+        </ul>
+      </div>
+      <div>
+        <h1>ol, type specified</h1>
+        <ul class="georgian">
+          <li>First List Item</li>
+          <li>Second List Item</li>
+        </ul>
+      </div>
+        <div>
+        <h1>ul, image</h1>
+        <ul class="image">
+          <li>First List Item</li>
+          <li>Second List Item</li>
+        </ul>
+      </div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Display Modes</title>
+	</head>
+	<body>
+		<h1>Display Modes</h2>
+		<div>
+			<h2>Block Mode - By Default</h2>
+			<div>The following is a div, it stretches <div style="border: 5px green solid">div here </div> to fill its container, splitting this sentencetence</div>
+		</div>
+		<div>
+			<h2>Inline Mode - By Default</h2>
+			<div>The following is a span, it site inside (inline) <span style="border: 5px red solid">span here </span> with this this sentencetence</div>
+		</div>
+		<div>
+			<h2>Inline Mode - Set Via CSS</h2>
+			<div>The following is a div, it behaves like an inline span <div style="display:inline; border: 5px green solid">div here </div> as it's display mode has been set to inline</div>
+		</div>
+		<div>
+			<h2>Block Mode - Set Via CSS</h2>
+			<div>The following is a span, it is behaves like a div (block) <span style="display:block; border: 5px red solid">span here </span>  as it's display mode has been set to block</div>
+		</div>
+		<div>
+			<h2>Inline Block Mode - Set Via CSS</h2>
+			<div>The following is a div, it is behaves externally it behaves like span (inline) <div style="display:inline-block; border: 5px red solid; width:150px;height:50px;">150px x 50px div</div> but setting width and height works</div>
+		</div>
+		<div>
+			<h2>Div with display set to none</h2>
+			<div>After the word none is a div exactly like the top example, but it has display set to none <div style="border: 5px green solid; display:none;">div here </div> no space is taken up</div>
+		</div>
+		<div>
+			<h2>Div with visibility set to hidden</h2>
+			<div>After the word hidden is a div exactly like the top example, but it has <b>visibility</b> set to <b>hidden</b><div style="border: 5px green solid; visibility:hidden;" id="hiddenDiv" >div here </div> the gap in this text is the div</div>
+		</div>
+		<input type="button" value="Toggle Hidden Div" onclick="buttonClick()" />
+		<script type="text/javascript">
+			function buttonClick(){
+				var hiddenDiv = document.getElementById("hiddenDiv");
+				if(hiddenDiv.style.visibility == "hidden") {
+					hiddenDiv.style.visibility = "visible";
+				}
+				else {
+					hiddenDiv.style.visibility = "hidden";
+				}
+			}
+		</script>
+	</body>
+</html>

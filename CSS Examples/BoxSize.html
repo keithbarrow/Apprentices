@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Box-Sizing</title>
+	</head>
+	<body>
+		<h1>Box-Sizing</h1>
+		<div>
+			<h2>content-box (default sizing mode)</h2>
+			<div>The following does not take into account box model outside the content size set to 220px x:70px; :</div>
+			<div style="width:220px; height:70px; background-color:yellow; border:10px green solid; padding:20px;" >actual size: 280px x 130px</div>
+		<div>
+		<div>
+			<h2>border-box</h2>
+			<div>The following <i>does</i> into account box model outside the content up to the margin, size set to 220px x 70px:</div>
+			<div style="box-sizing:border-box;width:220px; height:70px; background-color:yellow; border:10px green solid; padding:20px;" >actual size: 220px x 70px; </div>
+		<div>
+		<div>
+			<h2>border-box - padding too big!</h2>
+			<div>The following <i>does</i> into account box model outside the content up to the margin, but the padding pushes the top and bottom out further, size set to 220px x 70px:</div>
+			<div style="box-sizing:border-box;width:220px; height:70px; background-color:yellow; border:10px green solid; padding:40px;" >actual size: 220px x 100px; </div>
+		<div>
+		<div>
+			<h2>border-box  - with margin</h2>
+			<div>As per the first border box example, but with a margin - not taken into account in <i>total</i> size but</div>
+			<div style="box-sizing:border-box;width:220px; height:70px; background-color:yellow; border:10px green solid; padding:20px; margin:20px;" >actual size: 220px x 70px; </div>
+		<div>
+	</body>
+</html>

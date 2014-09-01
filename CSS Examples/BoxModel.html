@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Border Model</title>
+	</head>
+	<body>
+		<h1>Basic</h1>
+		<div style="background-color: red; margin:50px; border-color: green; border-style: solid; border-width:50px; padding:50px; width:100px;">Content</div>
+		<h1>As above shortened border syntax</h1>
+		<p>No visible difference - uses convention to set border values</p>
+		<div style="background-color: red; margin:50px; border: green solid 50px; padding:50px; width:100px;">Content</div>
+		<h1>Eyes Bleeding Border</h1>
+		<p>Can use top, right, bottom left on other elements of the boxing model, e.g. padding, margin</p>
+		<div style="background-color: red; margin:50px; border-bottom-color: green; border-top-color: violet; border-left-color:blue; border-right-color: yellow; border-bottom-style: solid; border-top-style: dotted; border-left-style: double; border-right-style: groove; border-bottom-width: 50px; border-top-width: 30px; border-left-width: 40px; border-right-width: 20px;padding:50px; width:100px;">Content</div>
+		<h1>Eyes Bleeding Border Shortened</h1>
+		<p>As above shortened</p>
+		<div style="background-color: red; margin:50px; 
+		
+			border-bottom: green solid 50px;
+			border-top: violet dotted 30px;
+			border-left:blue double 40px;
+			border-right: yellow groove 20px;
+			padding:50px; width:100px;">Content</div>
+		<h1>Basic - paired widths on border</h1>
+		<p>Again can use syntax on other elements in the box model setting the border width to "50px 10px" sets top and bottom to 50px, sides to 10px; </p>
+		<div style="background-color: red; margin:50px; border-color: green; border-style: solid; border-width:50px 10px; padding:50px; width:100px;">Content</div>
+	</body>
+</html>

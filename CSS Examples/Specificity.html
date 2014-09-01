@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Specificity</title>
+    <style>
+      * { color:violet; }
+      div { color:purple; }
+      .bar { color:blue; }
+      div.bar { color:green; }
+      #foo { color:yellow; } 
+      div#foo { color:orange; }
+      div#foo.bar { color:red; }
+
+
+    </style>
+	</head>
+	<body>
+		<div id="foo" class="bar">baz</div>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Padding</title>
+    <style>
+      span {
+        background-color:#FF00FF;
+      }
+      .evenPadding {
+        padding: 20px;
+      }
+      
+      .longFormFulllPadding {
+        padding-top :30px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+      }
+      
+      .shortFormFullPadding {
+        padding:5px 10px 20px 40px;
+      }
+      
+      .pairPadding {
+        padding: 10px 50px;
+      }
+    </style>
+	</head>
+	<body>
+  <div>
+      <h1>Unpadded</h1>
+      <span>Content</span>
+    </div>
+   <div>
+      <h1>Even Padding</h1>
+      <span class="evenPadding" >Content</span>
+   </div>
+    <div>
+      <h1>Long Form - each edge controlled</h1>
+      <span class="longFormFulllPadding" >Content</span>
+    </div>
+    <div>
+      <h1>Short Form - each edge controlled</h1>
+      <span class="shortFormFullPadding" >Content</span>
+    </div>
+     <div>
+      <h1>Top& Bottom/  Left & Right pairs</h1>
+      <span class="pairPadding" >Content</span>
+    </div>
+	</body>
+</html>
